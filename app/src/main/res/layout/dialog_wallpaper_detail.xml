@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="@android:color/transparent"
+    android:layout_margin="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="@drawable/dialog_background_gradient">
+
+        <!-- Close Button -->
+        <ImageButton
+            android:id="@+id/closeButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_close"
+            android:tint="@color/button_text_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:padding="8dp" />
+
+        <!-- Wallpaper Image - Now fills available space, cropping if needed -->
+        <ImageView
+            android:id="@+id/detailImageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/closeButton"
+        app:layout_constraintBottom_toTopOf="@+id/detailTitleTextView"
+        tools:src="@tools:sample/backgrounds/scenic"
+        android:contentDescription="@null"
+        android:background="@color/card_background_light" /> <!-- Removed aspect ratio and percent width -->
+
+        <!-- Wallpaper Title -->
+        <TextView
+            android:id="@+id/detailTitleTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/button_text_light"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detailImageView"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayoutButtons"
+            tools:text="Nature Image 1" />
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:id="@+id/linearLayoutButtons"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detailTitleTextView"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/downloadButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Download"
+                android:textColor="@color/button_text_light"
+                android:backgroundTint="@color/gradient_red_start"
+                app:cornerRadius="12dp"
+                android:layout_marginEnd="8dp"
+                app:icon="@drawable/ic_download"
+                app:iconTint="@color/button_text_light"
+                android:paddingVertical="12dp"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/shareButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Share"
+                android:textColor="@color/button_text_light"
+                android:backgroundTint="@color/gradient_yellow_start"
+                app:cornerRadius="12dp"
+                android:layout_marginStart="8dp"
+                app:icon="@drawable/ic_share"
+                app:iconTint="@color/button_text_light"
+                android:paddingVertical="12dp"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

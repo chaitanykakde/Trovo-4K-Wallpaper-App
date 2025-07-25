@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary brand colors (can remain the same or adjust for a lighter feel) -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <!-- Base colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Light Theme Specific Colors -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="app_background_light">#FFFFFF</color> <!-- Pure white background for the app -->
+    <color name="card_background_light">#F0F0F0</color> <!-- Very light grey for cards -->
+    <color name="text_primary_dark">#212121</color>   <!-- Dark text for readability on white -->
+    <color name="text_secondary_dark">#757575</color> <!-- Medium grey for secondary text -->
+
+    <!-- Splash Screen Colors (adjust for white theme) -->
+    <color name="splash_background">#FFFFFF</color> <!-- White background for splash -->
+    <color name="gradient_start">#00000000</color> <!-- Transparent -->
+    <color name="gradient_end">#33000000</color> <!-- Slight black tint for text readability on image -->
+
+
+    <color name="shimmer_placeholder">#E0E0E0</color> <!-- Light grey for shimmer -->
+    <color name="shimmer_highlight">#F5F5F5</color> <!-- Slightly lighter for shimmer highlight -->
+    <color name="gradient_red_start">#FF416C</color>
+    <color name="gradient_red_end">#FF4B2B</color>
+    <color name="gradient_yellow_start">#FFC371</color>
+    <color name="gradient_yellow_end">#FF5F6D</color>
+    <color name="gradient_blue_start">#4776E6</color>
+    <color name="gradient_blue_end">#8E54E9</color>
+
+    <!-- Dialog Button Colors -->
+    <color name="button_text_light">#FFFFFF</color>
+    <color name="button_text_dark">#212121</color>
+</resources>
